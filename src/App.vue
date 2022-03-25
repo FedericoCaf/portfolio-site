@@ -37,5 +37,9 @@ export default {
 
 @import "./assets/style/generals.scss";
 
+html{
+  scroll-behavior: smooth;
+}
+
 
 </style>

@@ -1,7 +1,20 @@
 <template>
-<div class="global-container-contacts">
+<div id="4" class="global-container-contacts">
+
+    <div class="box-circles">
+      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+         <a href="#1"> Home</a>
+      </div>
+       <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
+          <a href="#2"> About</a>
+      </div>
+      <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
+         <a href="#5">Works</a>
+      </div>
+    </div>
+
   <div class="title-contacts-container">
-      <h2 id="4" class="text-center"> Contattami </h2>
+      <h2 class="text-center"> Contattami </h2>
       <p class="text-center">Sono attualmente interessato a nuove oppurtunità lavorative. Non esitare a scrivermi per qualsiasi informazione</p>
   </div>
   <div class="wrapper-contacts d-flex justify-content-center align-items-center">
@@ -90,6 +103,62 @@ export default {
 @import "../assets/style/generals.scss";
 
 // * {box-sizing: border-box;}
+
+.global-container-contacts{
+  position: relative;
+}
+
+  .box-circles{
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: 20px;
+    // max-width: 1000px;
+    // width: 65%;
+  }
+
+  .box-img-title{
+    width: 35%;
+      h1{
+        font-size: 80px;
+        font-weight: 700;
+      }
+  }
+
+    .fc-circle{
+      // height: 24vw;
+      // width: 24vw;
+      border-radius: 50%;
+        a{
+          color: white;
+          font-size: 20px;
+        }
+    }
+
+    .fc-one{
+      // background-color: rgba(47, 201, 47, 0.808);
+      background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
+       height: 100px;
+      width: 100px;
+    }
+    .fc-two{
+      // background-color:rgba(32, 171, 196, 0.747);
+       background-image: linear-gradient(to right, rgba(255, 0, 0, 0.856) , rgba(255, 255, 0, 0.822));
+      height: 100px;
+      width: 100px;
+      // margin-left: -90px;
+      margin-top: -15px;
+    }
+    .fc-three{
+    
+      // background-color:rgba(204, 77, 19, 0.74);
+       background-image: linear-gradient(to bottom right, rgba(71, 15, 182, 0.87) , rgba(255, 0, 0, 0.856));
+      height: 100px;
+      width: 100px;
+      margin-top: -15px;
+
+    }
+
 
 .title-contacts-container{
   padding: 30px;
