@@ -1,30 +1,15 @@
 <template>
 
-<div id="background-wrap">
-    <div class="bubble x1"></div>
-    <div class="bubble x2"></div>
-    <div class="bubble x3"></div>
-    <div class="bubble x4"></div>
-    <div class="bubble x5"></div>
-    <div class="bubble x6"></div>
-    <div class="bubble x7"></div>
-    <div class="bubble x8"></div>
-    <div class="bubble x9"></div>
-    <div class="bubble x10"></div>
-</div>
-
   <div class="container main-container d-flex align-items-center">
 
-
-
     <div class="box-circles d-flex flex-wrap justify-content-center">
-      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <div data-aos="zoom-in-right" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
          <a href="#2"> About </a>
       </div>
-       <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
+       <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
          <a href="#5"> Works</a>
       </div>
-      <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
+      <div data-aos="zoom-in-up" data-aos-duration="2000" class="fc-circle fc-three d-flex justify-content-center align-items-center">
          <a href="#4">Contacts</a>
       </div>
     </div>
@@ -49,257 +34,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-body {
-	background: #00b4ff;
-	color: #333;
-	font: 100% Lato, Arial, Sans Serif;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	overflow-x: hidden;
-}
-
-#background-wrap {
-    bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: -1;
-}
-
-/* KEYFRAMES */
-
-@-webkit-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
-    }
-    100% {
-        margin-top: -100%;
-    }
-}
-
-@-moz-keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
-    }
-    100% {
-        margin-top: -100%;
-    }
-}
-
-@keyframes animateBubble {
-    0% {
-        margin-top: 1000px;
-    }
-    100% {
-        margin-top: -100%;
-    }
-}
-
-@-webkit-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-@-moz-keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-@keyframes sideWays { 
-    0% { 
-        margin-left:0px;
-    }
-    100% { 
-        margin-left:50px;
-    }
-}
-
-/* ANIMATIONS */
-
-.x1 {
-    -webkit-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: -5%;
-	top: 5%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
-}
-
-.x2 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 5%;
-	top: 80%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x3 {
-    -webkit-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 28s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 10%;
-	top: 40%;
-	
-	-webkit-transform: scale(0.7);
-	-moz-transform: scale(0.7);
-	transform: scale(0.7);
-}
-
-.x4 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	
-	left: 20%;
-	top: 0;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x5 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 30%;
-	top: 50%;
-	
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	transform: scale(0.5);
-}
-
-.x6 {
-    -webkit-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 21s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 50%;
-	top: 0;
-	
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-}
-
-.x7 {
-    -webkit-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 20s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 65%;
-	top: 70%;
-	
-	-webkit-transform: scale(0.4);
-	-moz-transform: scale(0.4);
-	transform: scale(0.4);
-}
-
-.x8 {
-    -webkit-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	animation: animateBubble 22s linear infinite, sideWays 3s ease-in-out infinite alternate;
-	
-	left: 80%;
-	top: 10%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-.x9 {
-    -webkit-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	animation: animateBubble 29s linear infinite, sideWays 4s ease-in-out infinite alternate;
-	
-	left: 90%;
-	top: 50%;
-	
-	-webkit-transform: scale(0.6);
-	-moz-transform: scale(0.6);
-	transform: scale(0.6);
-}
-
-.x10 {
-    -webkit-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	-moz-animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	animation: animateBubble 26s linear infinite, sideWays 2s ease-in-out infinite alternate;
-	
-	left: 80%;
-	top: 80%;
-	
-	-webkit-transform: scale(0.3);
-	-moz-transform: scale(0.3);
-	transform: scale(0.3);
-}
-
-/* OBJECTS */
-
-.bubble {
-    -webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-
-  background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
-	
-    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
-	
-    height: 200px;
-	position: absolute;
-	width: 200px;
-}
-
-.bubble:after {
-    background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 70%); /* FF3.6+ */
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.5)), color-stop(70%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-    background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Chrome10+,Safari5.1+ */
-    background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* Opera 12+ */
-    background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* IE10+ */
-    background: radial-gradient(ellipse at center,  rgba(255,255,255,0.5) 0%,rgba(255,255,255,0) 70%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	border-radius: 50%;
-	
-    -webkit-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	-moz-box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	box-shadow: inset 0 20px 30px rgba(255, 255, 255, 0.3);
-	
-	content: "";
-    height: 180px;
-	left: 10px;
-	position: absolute;
-	width: 180px;
-}
-
 .main-container{
+
   height: calc(100vh - 90px);
+  margin-top: -50px;
   // background-color: rgb(89, 65, 197);
  
  // background-color: rgb(89, 65, 197);
@@ -308,11 +46,12 @@ body {
 
   .box-circles{
     max-width: 1000px;
-    width: 65%;
+    width: 53%;
+    
   }
 
   .box-img-title{
-    width: 35%;
+    width: 47%;
       h1{
         font-size: 80px;
         font-weight: 700;
@@ -332,10 +71,20 @@ body {
     .fc-one{
       // background-color: rgba(47, 201, 47, 0.808);
   
-      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.856) , rgba(255, 255, 0, 0.822));
+      background-image: linear-gradient(to right, rgba(255, 0, 0, 0.856) , rgba(255, 238, 0, 0.822));
 
        height: 23vw;
-      width: 23vw;
+       width: 23vw;
+
+       transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+      
+       
+         &:hover{
+            transform: rotate(45deg);
+            box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
+            0 0 1px 30px rgba(rgba(76, 25, 177, 0.824), 0.1),
+            0 0 1px 45px rgba(rgba(76, 25, 177, 0.824), 0.1);
+        }
     }
 
     
@@ -348,6 +97,15 @@ body {
       width: 25vw;
       margin-left: -90px;
       margin-top: -30px;
+
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+       
+         &:hover{
+            transform: rotate(45deg);
+            box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
+            0 0 1px 30px rgba(rgba(76, 25, 177, 0.824), 0.1),
+            0 0 1px 45px rgba(rgba(76, 25, 177, 0.824), 0.1);
+        }
     }
     .fc-three{
       // background-color:rgba(204, 77, 19, 0.74); -webkit-border-radius: 50%;
@@ -356,6 +114,108 @@ body {
       width: 20vw;
       margin-top: -100px;
 
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 200ms cubic-bezier(.2,0,.7,1);
+       
+            &:hover{
+            transform: rotate(45deg);
+            box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
+            0 0 1px 30px rgba(rgba(76, 25, 177, 0.824), 0.1),
+            0 0 1px 45px rgba(rgba(76, 25, 177, 0.824), 0.1);
+        }
+
     }
+
+    @media (min-width: 1500px) {
+   .fc-one{
+    max-width: 350px;
+    width: 350px;
+    height: 350px;
+  }
+   .fc-two{
+    min-width: 350px;
+    width: 350px;
+    height: 350px;
+    margin-left: -60px;
+      margin-top: -30px;
+  }
+   .fc-three{
+    min-width: 350px;
+    width: 350px;
+    height: 350px;
+    margin-top: -80px;
+  }
+}
+    @media (max-width: 1100px) {
+   .fc-one{
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+  }
+   .fc-two{
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+      margin-top: -30px;
+  }
+   .fc-three{
+    min-width: 200px;
+    width: 200px;
+    height: 200px;
+    margin-top: -60px;
+  }
+
+  .box-img-title{
+      h1{
+        font-size: 60px;
+      } 
+      h3{
+        font-size: 18px;
+      } 
+  }
+}
+
+@media (max-width: 700px){
+    .box-img-title h1{
+      font-size: 40px;
+  }
+}
+
+    @media (max-width: 470px) {
+
+ .fc-circle{
+        a{
+          font-size: 15px;
+        }
+    }
+
+    .box-img-title{
+      h1{
+        font-size: 30px;
+      } 
+      h3{
+        font-size: 13px;
+      } 
+  }
+
+   .fc-one{
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+  }
+   .fc-two{
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+    margin-left: 0;
+      margin-top: -20px;
+  }
+   .fc-three{
+    min-width: 120px;
+    width: 120px;
+    height: 120px;
+    margin-top: -20px;
+  }
+}
 
 </style>

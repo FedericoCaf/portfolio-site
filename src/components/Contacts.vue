@@ -1,23 +1,33 @@
 <template>
 <div id="4" class="global-container-contacts">
 
-    <div class="box-circles">
-      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
-         <a href="#1"> Home</a>
-      </div>
-       <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
-          <a href="#2"> About</a>
-      </div>
-      <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
-         <a href="#5">Works</a>
-      </div>
+     <div class="box-circles d-flex">
+
+       <a href="#1"> 
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
+             Home  
+          </div>
+       </a> 
+
+       <a href="#2">
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
+          About
+         </div>
+       </a>
+       
+       <a href="#5"> 
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-three d-flex justify-content-center align-items-center">
+          Works
+          </div>
+       </a>
+     
     </div>
 
   <div class="title-contacts-container">
       <h2 class="text-center"> Contattami </h2>
       <p class="text-center">Sono attualmente interessato a nuove oppurtunità lavorative. Non esitare a scrivermi per qualsiasi informazione</p>
   </div>
-  <div class="wrapper-contacts d-flex justify-content-center align-items-center">
+  <div class="wrapper-contacts d-flex justify-content-center align-items-center flex-wrap">
     <div class="img-container">
        <img src="../assets/img/avatar-small2.png" alt="">
     </div>
@@ -113,12 +123,16 @@ export default {
     top: 0;
     right:0;
     padding: 20px;
+      a{
+          color: white;
+          font-size: 15px;
+        }
     // max-width: 1000px;
     // width: 65%;
   }
 
   .box-img-title{
-    width: 35%;
+    // width: 35%;
       h1{
         font-size: 80px;
         font-weight: 700;
@@ -129,10 +143,7 @@ export default {
       // height: 24vw;
       // width: 24vw;
       border-radius: 50%;
-        a{
-          color: white;
-          font-size: 20px;
-        }
+        
     }
 
     .fc-one{
@@ -147,7 +158,6 @@ export default {
       height: 100px;
       width: 100px;
       // margin-left: -90px;
-      margin-top: -15px;
     }
     .fc-three{
     
@@ -155,7 +165,6 @@ export default {
        background-image: linear-gradient(to bottom right, rgba(71, 15, 182, 0.87) , rgba(255, 0, 0, 0.856));
       height: 100px;
       width: 100px;
-      margin-top: -15px;
 
     }
 
@@ -165,14 +174,17 @@ export default {
   height: 100px;
   background-color: #F5F3EA;
   color: black;
+    h2{
+      padding-top: 85px;
+    }
 }
 
 .wrapper-contacts{
-  height: calc(100vh - 100px);
+  min-height: 100vh;
   background-color: #F5F3EA;
       .img-container{
-        width: 550px;
-        height: 550px;
+        width: 500px;
+        height: 500px;
         margin-right: 30px;
         background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));;
         border-radius: 50%;
@@ -182,17 +194,17 @@ export default {
              object-fit: cover;
            }
       }
+
+      .form-container{        
+          text-align: center;
+          border-radius: 10px;
+          background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
+          padding: 20px;
+          width: 650px;
+      }
 }
 
-.form-container {
-  // display: block;
-  // margin:auto;
-  text-align: center;
-  border-radius: 10px;
-  background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
-  padding: 20px;
-  width: 40%;
-}
+
 
 label {
   float: left;
@@ -209,14 +221,6 @@ input[type=text], [type=email], textarea {
   resize: vertical;
 }
 
-// input[type=submit] {
-//   background-color: #4CAF50;
-//   color: white;
-//   padding: 12px 20px;
-//   border: none;
-//   border-radius: 4px;
-//   cursor: pointer;
-// }
 button[type=submit] {
                   position: relative;
                       // margin-top: 100px;
@@ -320,6 +324,61 @@ button[type=submit] {
 // input[type=submit]:hover {
 //   background-color: #45a049;
 // }
+
+@media (max-width: 700px){
+
+  .box-circles{ 
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1230px){
+  .wrapper-contacts{
+    
+       .img-container{
+          width: 500px;
+          height: 500px;
+          // margin-right: 0px;
+          margin-top: 115px;
+          margin-bottom: 30px;
+          
+          // overflow: hidden;
+          
+        }
+
+      // .form-container{        
+      //     text-align: center;
+      //     border-radius: 10px;
+      //     background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
+      //     padding: 20px;
+      //     width: 650px;
+      // }
+}
+}
+
+@media (max-width: 570px){
+  .wrapper-contacts{
+    
+       .img-container{
+          width: 300px;
+          height: 300px;
+          // margin-right: 0px;
+          margin-top: 135px;
+          margin-bottom: 30px;
+          
+          // overflow: hidden;
+          
+        }
+
+      // .form-container{        
+      //     text-align: center;
+      //     border-radius: 10px;
+      //     background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
+      //     padding: 20px;
+      //     width: 650px;
+      // }
+}
+}
 
 
 

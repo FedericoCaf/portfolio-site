@@ -9,10 +9,8 @@
           
       </div>
      <ul class="d-flex">
-       <li> <a href="#"> <i class="fab fa-linkedin"></i>  </a> </li>
-       <li> <a href="#"> <i class="fab fa-github-square"></i> </a> </li>
-       <!-- <li> <a href="#">Works</a> </li>
-       <li> <a href="#">Contacts</a> </li> -->  
+       <li> <a href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
+       <li> <a href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
      </ul>
   </header>
  
@@ -53,12 +51,14 @@ export default {
       background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
        height: 70px;
       width: 70px;
+      min-width: 70px;
     }
  
  header{
+   width: 100%;
   //  height: 70px;
   //  line-height: 70px;
-   padding: 25px;
+    padding: 25px;
   //  background-color: aqua;
      li{
        margin-left: 40px;

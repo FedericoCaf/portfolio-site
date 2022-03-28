@@ -2,20 +2,30 @@
   <div class="works-container">
 
        <div class="box-circles d-flex">
-            <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
-              <a href="#1"> Home</a>
-            </div>
-            <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
-              <a href="#2"> About</a>
-            </div>
-            <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
-              <a href="#4">Contacts</a>
-            </div>
-        </div>
+
+       <a href="#1"> 
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
+             Home  
+          </div>
+       </a> 
+
+       <a href="#2">
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
+          About
+         </div>
+       </a>
+       
+       <a href="#4"> 
+          <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-three d-flex justify-content-center align-items-center">
+          Contacts
+          </div>
+       </a>
+     
+    </div>
 
       <h2 id="5" class="text-white container mb-5 pt-5">Alcuni dei miei lavori</h2>
      
-     <div class="wrapper-items">
+     <div class="wrapper-items d-flex justify-content-center flex-wrap">
         
          <PreviewItem
             v-for="(preview, index) in previews" :key="index"
@@ -42,25 +52,61 @@ export default {
   data(){
      return{
 
-          previews:[ 
-           
-                    require("../assets/img/boolflix.png"),
-                    require("../assets/img/freelancers.png"),   
-                    require("../assets/img/dc-comic.png"), 
-                    require("../assets/img/boolzapp.png"), 
-                    require("../assets/img/avada.png"), 
-                    require("../assets/img/playstation.png"),  
-                    require("../assets/img/dischi-api.png"), 
-                    require("../assets/img/spotify-img.png"), 
-                    require("../assets/img/discord.png"), 
-                    require("../assets/img/campoMinato.png"), 
-                    
+          previews:[
+              {
+                  img:   require("../assets/img/boolflix.png"),
+                  link: 'https://github.com/FedericoCaf/vue-boolflix'         
+              },
+              {
+                  img:   require("../assets/img/freelancers.png"),  
+                  link: 'https://github.com/FedericoCaf/freelancersB'      
+              },
+              {
+                  img:   require("../assets/img/dc-comic.png"),
+                  link: 'https://github.com/FedericoCaf/vue-dc-comics',            
+              },
+              {
+                  img:   require("../assets/img/boolzapp.png"), 
+                  link: 'https://github.com/FedericoCaf/vue-boolzapp',          
+              },
+              {
+                  img:   require("../assets/img/avada.png"),
+                  link: 'https://github.com/FedericoCaf/proj-html-vuejs',          
+              },
+              {
+                  img:   require("../assets/img/playstation.png"),
+                  link:  'https://github.com/FedericoCaf/htmlcss-playstation',          
+              },
+              {
+                  img:   require("../assets/img/dischi-api.png"), 
+                  link: 'https://github.com/FedericoCaf/php-ajax-dischi',            
+              },
+              {
+                  img:   require("../assets/img/spotify-img.png"), 
+                  link:  'https://github.com/FedericoCaf/html-css-spotifyweb',           
+              },
+              {
+                  img:   require("../assets/img/discord.png"),
+                  link: 'https://github.com/FedericoCaf/htmlcss-discord',           
+              },
+              {
+                  img:   require("../assets/img/campoMinato.png"),
+                  link: 'https://github.com/FedericoCaf/js-campominato-dom'            
+              },
+                
 
-                 ]
+
+           ]
+             
+              
+          }
+           
+                                  
+                
      }
   }
 
-}
+
 </script>
 
 <style lang="scss" scoped>
@@ -72,6 +118,10 @@ export default {
     top: 0;
     right:0;
     padding: 20px;
+      a{
+          color: white;
+          font-size: 15px;
+        }
     // max-width: 1000px;
     // width: 65%;
   }
@@ -80,10 +130,7 @@ export default {
       // height: 24vw;
       // width: 24vw;
       border-radius: 50%;
-        a{
-          color: white;
-          font-size: 15px;
-        }
+        
     }
 
     .fc-one{
@@ -100,7 +147,7 @@ export default {
       width: 100px;
       // margin-left: -90px;
       margin-top: -5px;
-      margin-left: -10px;
+      // margin-left: -10px;
     }
     .fc-three{
     
@@ -109,19 +156,26 @@ export default {
       height: 100px;
       width: 100px;
       margin-top: -5px;
-      margin-left: -10px;
+      // margin-left: -10px;
 
     }
 
   .works-container{
    //   padding-top: 100px;
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
    // margin-bottom: 300px;
       .wrapper-items{
         width: 100%;
       }
   }
+
+  @media (max-width: 700px){
+
+  .box-circles{ 
+    visibility: hidden;
+  }
+}
 
   
 </style>

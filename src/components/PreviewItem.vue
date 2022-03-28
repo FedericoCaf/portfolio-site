@@ -1,9 +1,9 @@
 <template>
 
       <div class="container-glob">
-        <div class="container-preview"> <img :src="preview" alt=""> 
+        <div class="container-preview"> <img :src="preview.img" alt=""> 
             <div class="fc-overlay d-flex justify-content-center align-items-center"> 
-                  <a href="#"> View project </a>
+                  <a :href="preview.link" target="_blank"> View project </a>
             </div>
         </div>
       </div>
@@ -25,7 +25,7 @@ export default {
 
 .container-glob{
    width: calc(100% / 5);
-          height: 17vw;
+          height: 19vw;
           position: relative;
           float: left;
           overflow: hidden;
@@ -74,13 +74,34 @@ export default {
                 background-color: rgba(0, 0, 0, 0.6);
                 border-radius: 30px;
                 padding: 5px;
-                transition: all 0.3s;
+                transition: all 0.5s;
                   &:hover{
                      transform: scale(1.5);
-                     color:rgb(224, 233, 143);
+                     color: white;
                   }
              }
            
+       }
+
+       @media (max-width:1100px){
+          .container-glob{
+              width: 300px;
+              height: 300px;
+               position: relative;
+               display: flex;
+               justify-content: center;
+               overflow: hidden;
+
+                 &:last-child{
+                   display: none;
+               }
+         }
+       }
+
+       @media (max-width:900px){
+          .container-glob:last-child{
+             display: block;         
+         }
        }
 
 </style>
