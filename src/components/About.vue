@@ -28,7 +28,7 @@
    <div id="3" class="container-skills container d-flex justify-content-center align-content-start flex-wrap">
  
      <div class="container-text p-4"> 
-        <p> Sono un full stack web developer di Roma, Italia.
+        <p> Sono un full stack web developer di Roma.
       
           Realizzo web application o siti di design utlizzando le più moderne ed efficienti tecnologie. <br>
           Cerco sempre di migliorarmi per scrivere un codice pulito ed elegante. 
@@ -115,6 +115,7 @@ export default {
       height: 100px;
       width: 100px;
       // margin-left: -90px;
+     
     }
     .fc-three{
     
@@ -122,6 +123,7 @@ export default {
       background-image: linear-gradient(to top, rgba(255, 255, 0, 0.822) , rgba(96, 32, 214, 0.822));
       height: 100px;
       width: 100px;
+   
 
     }
 

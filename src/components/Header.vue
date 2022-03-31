@@ -1,13 +1,15 @@
 <template>
 
   <header id="1" class="d-flex justify-content-between">
-     <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <a href="#1"> 
+        <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
          
-             <a href="#1"> 
+             
                  <span class="logo-font"> fc </span> 
-             </a>
+           
           
-      </div>
+         </div>
+        </a>
      <ul class="d-flex">
        <li> <a href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
        <li> <a href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
@@ -40,7 +42,7 @@ export default {
       // height: 24vw;
       // width: 24vw;
       border-radius: 50%;
-        a{
+        span{
           color: white;
           font-size: 45px;
         }

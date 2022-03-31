@@ -26,7 +26,12 @@
   <div class="title-contacts-container">
       <h2 class="text-center"> Contattami </h2>
       <p class="text-center">Sono attualmente interessato a nuove oppurtunità lavorative. Non esitare a scrivermi per qualsiasi informazione</p>
+      <div v-if="isClicked"
+       class="alert alert-success text-center" role="alert">
+         Messaggio inviato correttamente
+      </div>
   </div>
+  
   <div class="wrapper-contacts d-flex justify-content-center align-items-center flex-wrap">
     <div class="img-container">
        <img src="../assets/img/avatar-small2.png" alt="">
@@ -39,6 +44,7 @@
             v-model="name"
             name="name"
             placeholder="Your Name"
+            required
           >
           <label>Email</label>
           <input 
@@ -46,13 +52,16 @@
             v-model="email"
             name="email"
             placeholder="Your Email"
+            required
             >
           <label>Message</label>
           <textarea 
             name="message"
             v-model="message"
             cols="30" rows="5"
-            placeholder="Message">
+            placeholder="Message"
+            required>
+            
           </textarea>
           
           <button class="btn-slide-line" type="submit" value="Send">Invia
@@ -81,7 +90,8 @@ export default {
     return {
       name: '',
       email: '',
-      message: ''
+      message: '',
+      isClicked: false
     }
   },
 
@@ -102,7 +112,20 @@ export default {
       this.name = ''
       this.email = ''
       this.message = ''
+
+      this.isClicked = true;
+
+      setTimeout(this.resetMessage, 5000);
+
     },
+
+    resetMessage(){
+      if(this.isClicked === true){
+        this.isClicked = false;
+      }
+    }
+
+
   }
   
 }
@@ -151,6 +174,7 @@ export default {
       background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
        height: 100px;
       width: 100px;
+   
     }
     .fc-two{
       // background-color:rgba(32, 171, 196, 0.747);
@@ -158,6 +182,7 @@ export default {
       height: 100px;
       width: 100px;
       // margin-left: -90px;
+   
     }
     .fc-three{
     
@@ -165,6 +190,7 @@ export default {
        background-image: linear-gradient(to bottom right, rgba(71, 15, 182, 0.87) , rgba(255, 0, 0, 0.856));
       height: 100px;
       width: 100px;
+  
 
     }
 

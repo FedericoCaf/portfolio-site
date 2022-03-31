@@ -148,6 +148,7 @@ export default {
       // margin-left: -90px;
       margin-top: -5px;
       // margin-left: -10px;
+    
     }
     .fc-three{
     
@@ -157,6 +158,7 @@ export default {
       width: 100px;
       margin-top: -5px;
       // margin-left: -10px;
+    
 
     }
 
