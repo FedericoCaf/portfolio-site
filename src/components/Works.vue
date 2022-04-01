@@ -55,43 +55,53 @@ export default {
           previews:[
               {
                   img:   require("../assets/img/boolflix.png"),
-                  link: 'https://github.com/FedericoCaf/vue-boolflix'         
+                  link: 'https://github.com/FedericoCaf/vue-boolflix',
+                  title: 'Boolflix'    
               },
               {
                   img:   require("../assets/img/freelancers.png"),  
-                  link: 'https://github.com/FedericoCaf/freelancersB'      
+                  link: 'https://github.com/FedericoCaf/freelancersB',
+                  title: 'B-Freelancers'      
               },
               {
                   img:   require("../assets/img/dc-comic.png"),
-                  link: 'https://github.com/FedericoCaf/vue-dc-comics',            
+                  link: 'https://github.com/FedericoCaf/vue-dc-comics',
+                  title: 'Dc Comics'            
               },
               {
                   img:   require("../assets/img/boolzapp.png"), 
-                  link: 'https://github.com/FedericoCaf/vue-boolzapp',          
+                  link: 'https://federicocaf.github.io/vue-boolzapp/',     
+                  title: 'Boolzapp'     
               },
               {
                   img:   require("../assets/img/avada.png"),
-                  link: 'https://github.com/FedericoCaf/proj-html-vuejs',          
+                  link: 'https://github.com/FedericoCaf/proj-html-vuejs', 
+                  title: 'Avada Consult'         
               },
               {
                   img:   require("../assets/img/playstation.png"),
-                  link:  'https://github.com/FedericoCaf/htmlcss-playstation',          
+                  link:  'https://federicocaf.github.io/htmlcss-playstation/',  
+                  title: 'Playstation'        
               },
               {
                   img:   require("../assets/img/dischi-api.png"), 
-                  link: 'https://github.com/FedericoCaf/php-ajax-dischi',            
+                  link: 'https://github.com/FedericoCaf/php-ajax-dischi',   
+                  title: 'Discs'         
               },
               {
                   img:   require("../assets/img/spotify-img.png"), 
-                  link:  'https://github.com/FedericoCaf/html-css-spotifyweb',           
+                  link:  'https://federicocaf.github.io/html-css-spotifyweb/', 
+                  title: 'Spotify Web'          
               },
               {
                   img:   require("../assets/img/discord.png"),
-                  link: 'https://github.com/FedericoCaf/htmlcss-discord',           
+                  link: 'https://federicocaf.github.io/htmlcss-discord/', 
+                  title: 'Discord'          
               },
               {
                   img:   require("../assets/img/campoMinato.png"),
-                  link: 'https://github.com/FedericoCaf/js-campominato-dom'            
+                  link: 'https://federicocaf.github.io/js-campominato-dom/',     
+                  title: 'Minefield'       
               },
                 
 

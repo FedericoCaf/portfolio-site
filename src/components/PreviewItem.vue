@@ -3,7 +3,7 @@
       <div class="container-glob">
         <div class="container-preview"> <img :src="preview.img" alt=""> 
             <div class="fc-overlay d-flex justify-content-center align-items-center"> 
-                  <a :href="preview.link" target="_blank"> View project </a>
+                  <a :href="preview.link" target="_blank"> {{ preview.title }} </a>
             </div>
         </div>
       </div>
