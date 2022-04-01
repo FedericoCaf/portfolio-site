@@ -84,6 +84,57 @@ export default {
           color: white;
           font-size: 15px;
         }
+
+         .fc-circle{
+      // height: 24vw;
+      // width: 24vw;
+      border-radius: 50%;
+      color: black;
+       
+    }
+
+        .fc-one{
+      // background-color: rgba(47, 201, 47, 0.808);
+      // background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
+      box-shadow: 5px 3px 8px 3px #9a0707e0;
+       height: 100px;
+      width: 100px;
+      transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #ff0026f3,
+                  0 0 1px 20px rgba(rgba(255, 0, 0, 0.824), 0.1);
+              }
+     
+      }
+
+    .fc-two{
+      box-shadow: 5px 3px 8px 3px rgba(255, 98, 0, 0.801);
+      height: 100px;
+      width: 100px;
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #ff4d00f3,
+                  0 0 1px 20px rgba(rgba(255, 89, 0, 0.824), 0.1);
+              }
+    }
+    
+    .fc-three{
+      box-shadow: 5px 3px 8px 3px rgba(0, 255, 55, 0.804);
+      height: 100px;
+      width: 100px;
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #03f86df3,
+                  0 0 1px 20px rgba(rgba(5, 242, 76, 0.824), 0.1);
+              }
+    }
+
+
+
+
   }
 
   .box-img-title{
@@ -94,38 +145,11 @@ export default {
       }
   }
 
-    .fc-circle{
-      // height: 24vw;
-      // width: 24vw;
-      border-radius: 50%;
-       
-    }
-
-    .fc-one{
-      // background-color: rgba(47, 201, 47, 0.808);
-      background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
-       height: 100px;
-      width: 100px;
-     
-}
-    
-    .fc-two{
-      // background-color:rgba(32, 171, 196, 0.747);
-       background-image: linear-gradient(to bottom right, rgba(71, 15, 182, 0.87) , rgba(255, 0, 0, 0.856));
-      height: 100px;
-      width: 100px;
-      // margin-left: -90px;
-     
-    }
-    .fc-three{
-    
-      // background-color:rgba(204, 77, 19, 0.74);
-      background-image: linear-gradient(to top, rgba(255, 255, 0, 0.822) , rgba(96, 32, 214, 0.822));
-      height: 100px;
-      width: 100px;
    
 
-    }
+
+    
+
 
 .container-global{
   position: relative;

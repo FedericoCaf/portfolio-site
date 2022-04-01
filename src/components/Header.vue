@@ -48,13 +48,23 @@ export default {
         }
     }
 
-.fc-one{
+
       // background-color: rgba(47, 201, 47, 0.808);
-      background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
-       height: 70px;
-      width: 70px;
-      min-width: 70px;
-    }
+      // background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
+      //  height: 70px;
+      // width: 70px;
+      // min-width: 70px;
+
+  .fc-one{
+            box-shadow: 5px 3px 8px 3px #fe0000;
+            height: 70px;
+            width: 70px;
+            min-width: 70px;
+       
+              }
+    
+
+
  
  header{
    width: 100%;

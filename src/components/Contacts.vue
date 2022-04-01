@@ -26,8 +26,8 @@
   <div class="title-contacts-container">
       <h2 class="text-center"> Contattami </h2>
       <p class="text-center">Sono attualmente interessato a nuove oppurtunità lavorative. Non esitare a scrivermi per qualsiasi informazione</p>
-      <div v-if="isClicked"
-       class="alert alert-success text-center" role="alert">
+      <div data-aos="fade-right" data-aos-duration="2000" v-if="isClicked"
+       class="alert alert-success text-center mt-5" role="alert">
          Messaggio inviato correttamente
       </div>
   </div>
@@ -139,6 +139,8 @@ export default {
 
 .global-container-contacts{
   position: relative;
+  min-height: 100vh;
+  background-color: #F5F3EA;
 }
 
   .box-circles{
@@ -146,12 +148,62 @@ export default {
     top: 0;
     right:0;
     padding: 20px;
-      a{
+    // display: block;
+    // max-width: 1000px;
+    // width: 65%;
+       a{
           color: white;
           font-size: 15px;
         }
-    // max-width: 1000px;
-    // width: 65%;
+
+         .fc-circle{
+      // height: 24vw;
+      // width: 24vw;
+      border-radius: 50%;
+      color: black;
+       
+    }
+
+        .fc-one{
+      // background-color: rgba(47, 201, 47, 0.808);
+      // background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
+      box-shadow: 5px 3px 8px 3px #9a0707e0;
+       height: 100px;
+      width: 100px;
+      transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #ff0026f3,
+                  0 0 1px 20px rgba(rgba(255, 0, 0, 0.824), 0.1);
+              }
+     
+      }
+
+     .fc-two{
+     box-shadow: 5px 3px 8px 3px #260080;
+      height: 100px;
+      width: 100px;
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #002afff3,
+                  0 0 1px 20px rgba(rgba(55, 0, 255, 0.856), 0.1);
+              }
+    }
+    
+    .fc-three{
+      box-shadow: 5px 3px 8px 3px rgba(255, 98, 0, 0.801);
+      height: 100px;
+      width: 100px;
+        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+         &:hover{
+                  box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
+                  0 0 1px 10px #ff4d00f3,
+                  0 0 1px 20px rgba(rgba(255, 89, 0, 0.824), 0.1);
+              }
+    }
+
+
   }
 
   .box-img-title{
@@ -161,39 +213,6 @@ export default {
         font-weight: 700;
       }
   }
-
-    .fc-circle{
-      // height: 24vw;
-      // width: 24vw;
-      border-radius: 50%;
-        
-    }
-
-    .fc-one{
-      // background-color: rgba(47, 201, 47, 0.808);
-      background-image: linear-gradient(to bottom left, rgba(0, 110, 255, 0.856) , rgba(235, 12, 235, 0.904));
-       height: 100px;
-      width: 100px;
-   
-    }
-    .fc-two{
-      // background-color:rgba(32, 171, 196, 0.747);
-       background-image: linear-gradient(to right, rgba(255, 0, 0, 0.856) , rgba(255, 255, 0, 0.822));
-      height: 100px;
-      width: 100px;
-      // margin-left: -90px;
-   
-    }
-    .fc-three{
-    
-      // background-color:rgba(204, 77, 19, 0.74);
-       background-image: linear-gradient(to bottom right, rgba(71, 15, 182, 0.87) , rgba(255, 0, 0, 0.856));
-      height: 100px;
-      width: 100px;
-  
-
-    }
-
 
 .title-contacts-container{
   padding: 30px;
@@ -206,11 +225,12 @@ export default {
 }
 
 .wrapper-contacts{
-  min-height: 100vh;
-  background-color: #F5F3EA;
+  // min-height: 100vh;
+  // background-color: #F5F3EA;
+  margin-top: 150px;
       .img-container{
         width: 500px;
-        height: 500px;
+        // height: 500px;
         margin-right: 30px;
         background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));;
         border-radius: 50%;
@@ -356,10 +376,20 @@ button[type=submit] {
   .box-circles{ 
     visibility: hidden;
   }
+
+  .title-contacts-container{
+ 
+    h2{
+      padding-top: 0;
+    }
+}
+
 }
 
 @media (max-width: 1230px){
   .wrapper-contacts{
+
+    margin-top: 20px;
     
        .img-container{
           width: 500px;
