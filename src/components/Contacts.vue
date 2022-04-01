@@ -32,7 +32,7 @@
       </div>
   </div>
   
-  <div class="wrapper-contacts d-flex justify-content-center align-items-center flex-wrap">
+  <div class="wrapper-contacts d-flex justify-content-center flex-wrap">
     <div class="img-container">
        <img src="../assets/img/avatar-small2.png" alt="">
     </div>
@@ -138,6 +138,7 @@ export default {
 // * {box-sizing: border-box;}
 
 .global-container-contacts{
+  // padding-bottom: 30px;
   position: relative;
   min-height: 100vh;
   background-color: #F5F3EA;
@@ -170,7 +171,7 @@ export default {
       box-shadow: 5px 3px 8px 3px #9a0707e0;
        height: 100px;
       width: 100px;
-      transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+      transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff0026f3,
@@ -183,7 +184,7 @@ export default {
      box-shadow: 5px 3px 8px 3px #260080;
       height: 100px;
       width: 100px;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+        transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #002afff3,
@@ -195,7 +196,7 @@ export default {
       box-shadow: 5px 3px 8px 3px rgba(255, 98, 0, 0.801);
       height: 100px;
       width: 100px;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+        transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff4d00f3,
@@ -227,10 +228,11 @@ export default {
 .wrapper-contacts{
   // min-height: 100vh;
   // background-color: #F5F3EA;
-  margin-top: 150px;
+  // padding-bottom: 60px;
+  padding-top: 150px;
       .img-container{
         width: 500px;
-        // height: 500px;
+        height: 500px;
         margin-right: 30px;
         background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));;
         border-radius: 50%;
@@ -386,9 +388,10 @@ button[type=submit] {
 
 }
 
-@media (max-width: 1230px){
+@media (max-width: 1250px){
   .wrapper-contacts{
 
+    padding-top: 0;
     margin-top: 20px;
     
        .img-container{
@@ -402,24 +405,26 @@ button[type=submit] {
           
         }
 
-      // .form-container{        
-      //     text-align: center;
-      //     border-radius: 10px;
-      //     background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
-      //     padding: 20px;
-      //     width: 650px;
-      // }
+      .form-container{        
+          text-align: center;
+          border-radius: 10px;
+          background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
+          padding: 20px;
+          width: 800px;
+      }
 }
 }
 
 @media (max-width: 570px){
   .wrapper-contacts{
+
+    
     
        .img-container{
-          width: 300px;
-          height: 300px;
+          width: 400px;
+          height: 400px;
           // margin-right: 0px;
-          margin-top: 135px;
+          // margin-top: 135px;
           margin-bottom: 30px;
           
           // overflow: hidden;

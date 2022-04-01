@@ -99,7 +99,7 @@ export default {
       box-shadow: 5px 3px 8px 3px #9a0707e0;
        height: 100px;
       width: 100px;
-      transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+      transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff0026f3,
@@ -112,7 +112,7 @@ export default {
       box-shadow: 5px 3px 8px 3px rgba(255, 98, 0, 0.801);
       height: 100px;
       width: 100px;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+        transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff4d00f3,
@@ -124,7 +124,7 @@ export default {
       box-shadow: 5px 3px 8px 3px rgba(0, 255, 55, 0.804);
       height: 100px;
       width: 100px;
-        transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+        transition: all 1.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #03f86df3,

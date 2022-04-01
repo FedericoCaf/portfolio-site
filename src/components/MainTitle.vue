@@ -3,7 +3,7 @@
   <div class="container main-container d-flex align-items-center">
 
     <div class="box-circles d-flex flex-wrap justify-content-center">
-      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
          <a href="#2"> About </a>
       </div>
        <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
@@ -63,7 +63,7 @@ export default {
             height: 20vw;
             width: 20vw;
             // transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
-            transition: all 1s;
+            transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
@@ -79,7 +79,7 @@ export default {
             width: 22vw;
             margin-left: -60px;
             margin-top: -100px;
-             transition: all 1s;
+             transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
@@ -93,7 +93,7 @@ export default {
             height: 18vw;
             width: 18vw;
             margin-top: -100px;
-              transition: all 1s;
+              transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
