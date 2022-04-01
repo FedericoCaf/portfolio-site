@@ -49,6 +49,7 @@ export default {
     max-width: 1000px;
     // width: 53%;
     // height: 500px;
+    // transition: box-shadow 400ms cubic-bezier(.2,0,.7,1);
 
         .fc-circle{
           border-radius: 50%;
@@ -62,7 +63,8 @@ export default {
             box-shadow: 5px 10px 8px 10px #260080;
             height: 20vw;
             width: 20vw;
-            transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+            transition: all 10s;
+          //  transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
