@@ -233,7 +233,8 @@ export default {
       .img-container{
         width: 500px;
         height: 500px;
-        margin-right: 30px;
+        margin: 20px;
+        padding: 20px;
         background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));;
         border-radius: 50%;
         // overflow: hidden;
@@ -247,6 +248,7 @@ export default {
           text-align: center;
           border-radius: 10px;
           background-image: linear-gradient(to bottom right, rgba(76, 25, 177, 0.824) , rgba(255, 0, 0, 0.856));
+          margin: 20px;
           padding: 20px;
           width: 650px;
       }
@@ -373,7 +375,7 @@ button[type=submit] {
 //   background-color: #45a049;
 // }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
 
   .box-circles{ 
     visibility: hidden;
