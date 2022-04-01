@@ -3,13 +3,13 @@
   <div class="container main-container d-flex align-items-center">
 
     <div class="box-circles d-flex flex-wrap justify-content-center">
-      <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
          <a href="#2"> About </a>
       </div>
-       <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
+       <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
          <a href="#5"> Works</a>
       </div>
-      <div data-aos="zoom-in-up" data-aos-duration="2000" class="fc-circle fc-three d-flex justify-content-center align-items-center">
+      <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
          <a href="#4">Contacts</a>
       </div>
     </div>
