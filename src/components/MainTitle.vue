@@ -3,13 +3,13 @@
   <div class="container main-container d-flex align-items-center">
 
     <div class="box-circles d-flex flex-wrap justify-content-center">
-      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <div data-aos="fade-right" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
          <a href="#2"> About </a>
       </div>
-       <div class="fc-circle fc-two d-flex justify-content-center align-items-center">
+       <div data-aos="fade-down" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
          <a href="#5"> Works</a>
       </div>
-      <div class="fc-circle fc-three d-flex justify-content-center align-items-center">
+      <div data-aos="fade-up" data-aos-duration="2000" class="fc-circle fc-three d-flex justify-content-center align-items-center">
          <a href="#4">Contacts</a>
       </div>
     </div>
@@ -34,9 +34,32 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
+@media only screen and (max-width : 768px) {
+    .fc-circle {
+        /*CSS transitions*/
+        -o-transition-property: none !important;
+        -moz-transition-property: none !important;
+        -ms-transition-property: none !important;
+        -webkit-transition-property: none !important;
+        transition-property: none !important;
+        /*CSS transforms*/
+        -o-transform: none !important;
+        -moz-transform: none !important;
+        -ms-transform: none !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        /*CSS animations*/
+        -webkit-animation: none !important;
+        -moz-animation: none !important;
+        -o-animation: none !important;
+        -ms-animation: none !important;
+        animation: none !important;
+    }
+}
+
 .main-container{
 
-  height: calc(100vh - 90px);
+  height: calc(100vh - 75px);
   margin-top: -50px;
   // background-color: rgb(89, 65, 197);
  
@@ -278,6 +301,47 @@ export default {
           font-size: 17px;
         }
   }
+  }
+
+  @media (max-height:500px){
+         .box-img-title{
+        h1{
+          font-size: 45px;
+        }
+
+        h3{
+          font-size: 17px;
+        }
+  }
+
+  .box-circles{
+
+        .fc-circle{
+         
+            a{
+              font-size: 18px;
+            }
+        }
+
+          .fc-one{
+            width: 135px;
+            height: 135px;
+            margin: 0;
+          }
+
+          .fc-two{
+            width: 135px;
+            height: 135px;
+            margin: 0;
+          }
+
+          .fc-three{
+             width: 135px;
+            height: 135px; 
+            margin: 0;  
+          }
+    
+    }
   }
 
 

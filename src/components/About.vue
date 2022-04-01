@@ -25,7 +25,7 @@
 
 
    <h2 class="pt-5 pb-5 container"> Riguardo a me </h2>
-   <div id="3" class="container-skills container d-flex justify-content-center align-content-start flex-wrap">
+   <div id="3" class="container-skills container d-flex justify-content-center flex-wrap">
  
      <div class="container-text p-4"> 
         <p> Sono un full stack web developer di Roma.
@@ -99,7 +99,7 @@ export default {
       box-shadow: 5px 3px 8px 3px #9a0707e0;
        height: 100px;
       width: 100px;
-      transition: all 1.5s;
+      transition: all 0.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff0026f3,
@@ -112,7 +112,7 @@ export default {
       box-shadow: 5px 3px 8px 3px rgba(255, 98, 0, 0.801);
       height: 100px;
       width: 100px;
-        transition: all 1.5s;
+        transition: all 0.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #ff4d00f3,
@@ -124,7 +124,7 @@ export default {
       box-shadow: 5px 3px 8px 3px rgba(0, 255, 55, 0.804);
       height: 100px;
       width: 100px;
-        transition: all 1.5s;
+        transition: all 0.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
                   0 0 1px 10px #03f86df3,
@@ -163,17 +163,16 @@ export default {
 
     .container-text{
        width: 500px;
+       margin: 10px;
       //  height: 250px;
         p{
-          font-size: 20px;
+          font-size: 17px;
         }
     }
     .container-photo{
-      width:   500px;
-      // height: 250px;
-      padding-bottom: 40px;
+      width:   400px;
       border-radius: 50%;
-      // margin-bottom: 30px;
+      margin: 10px;
         img{
           width: 100%;
           border-radius: 10px;
@@ -181,6 +180,7 @@ export default {
     }
     .container-icon{
       width:   500px;
+      margin: 10px;
       // height: 250px;
       border-radius: 50%;
         img{
