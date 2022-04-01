@@ -25,7 +25,7 @@
 
 
    <h2 class="pt-5 pb-5 container"> Riguardo a me </h2>
-   <div id="3" class="container-skills container d-flex justify-content-center flex-wrap">
+   <div id="3" class="container-skills container d-flex justify-content-center align-content-start flex-wrap">
  
      <div class="container-text p-4"> 
         <p> Sono un full stack web developer di Roma.
@@ -166,13 +166,13 @@ export default {
        margin: 10px;
       //  height: 250px;
         p{
-          font-size: 17px;
+          font-size: 19px;
         }
     }
     .container-photo{
-      width:   400px;
+      width:   500px;
       border-radius: 50%;
-      margin: 10px;
+      margin-bottom: 50px;
         img{
           width: 100%;
           border-radius: 10px;
