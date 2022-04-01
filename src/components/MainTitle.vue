@@ -3,7 +3,7 @@
   <div class="container main-container d-flex align-items-center">
 
     <div class="box-circles d-flex flex-wrap justify-content-center">
-      <div data-aos="zoom-in-right" data-aos-duration="2000" class="fc-circle fc-one d-flex justify-content-center align-items-center">
+      <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
          <a href="#2"> About </a>
       </div>
        <div data-aos="zoom-in-left" data-aos-duration="2000" class="fc-circle fc-two d-flex justify-content-center align-items-center">
@@ -49,7 +49,6 @@ export default {
     max-width: 1000px;
     // width: 53%;
     // height: 500px;
-    // transition: box-shadow 400ms cubic-bezier(.2,0,.7,1);
 
         .fc-circle{
           border-radius: 50%;
