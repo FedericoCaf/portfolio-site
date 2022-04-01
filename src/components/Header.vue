@@ -11,8 +11,8 @@
          </div>
         </a>
      <ul class="d-flex">
-       <li> <a href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
-       <li> <a href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
+       <li> <a target="_blank" href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
+       <li> <a target="_blank" href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
      </ul>
   </header>
  
