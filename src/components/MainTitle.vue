@@ -63,6 +63,37 @@ export default {
             height: 20vw;
             width: 20vw;
             // transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+          }
+
+          
+          .fc-two{
+            box-shadow: 5px 10px 8px 10px rgba(135, 53, 2, 0.801);
+            height: 22vw;
+            width: 22vw;
+            margin-left: -60px;
+            margin-top: -100px;
+          }
+
+          .fc-three{
+            box-shadow: 5px 10px 8px 10px #029c42;
+            height: 18vw;
+            width: 18vw;
+            margin-top: -100px;
+          }
+    
+  }
+
+  .box-img-title{
+    width: 47%;
+      h1{
+        font-size: 80px;
+        font-weight: 700;
+      }
+  }
+
+  @media (min-width: 800px){
+       .box-circles{
+          .fc-one{
             transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
@@ -74,11 +105,6 @@ export default {
 
           
           .fc-two{
-            box-shadow: 5px 10px 8px 10px rgba(135, 53, 2, 0.801);
-            height: 22vw;
-            width: 22vw;
-            margin-left: -60px;
-            margin-top: -100px;
              transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
@@ -89,10 +115,6 @@ export default {
           }
 
           .fc-three{
-            box-shadow: 5px 10px 8px 10px #029c42;
-            height: 18vw;
-            width: 18vw;
-            margin-top: -100px;
               transition: all 2s;
               &:hover{
                   transform: rotate(45deg);
@@ -103,13 +125,6 @@ export default {
           }
     
   }
-
-  .box-img-title{
-    width: 47%;
-      h1{
-        font-size: 80px;
-        font-weight: 700;
-      }
   }
 
 
@@ -190,7 +205,7 @@ export default {
           .fc-one{
             width: 165px;
             height: 165px;
-            margin: 0;
+            margin: 0;   
           }
 
           .fc-two{
