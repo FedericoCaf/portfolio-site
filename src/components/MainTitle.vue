@@ -63,7 +63,8 @@ export default {
             box-shadow: 5px 10px 8px 10px #260080;
             height: 20vw;
             width: 20vw;
-            transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+            // transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+            transition: all 1s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
@@ -79,7 +80,7 @@ export default {
             width: 22vw;
             margin-left: -60px;
             margin-top: -100px;
-              transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1); 
+             transition: all 1s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
@@ -93,7 +94,7 @@ export default {
             height: 18vw;
             width: 18vw;
             margin-top: -100px;
-              transition: box-shadow 400ms cubic-bezier(.2,0,.7,1), transform 5ms cubic-bezier(.2,0,.7,1);
+              transition: all 1s;
               &:hover{
                   transform: rotate(45deg);
                   box-shadow: 0 0 1px 15px rgba(rgba(0, 0, 0, 0.824), 0.4),
