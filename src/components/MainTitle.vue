@@ -19,6 +19,8 @@
        <h1 class="text-white">Ciao, sono <span class="text-secondary">Federico</span> </h1>
        <h3 class="text-white mt-3">benvenuti nel mio portfolio</h3>
     </div>
+
+      
     
   </div>
  
@@ -34,28 +36,29 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 
-@media only screen and (max-width : 768px) {
-    .fc-circle {
-        /*CSS transitions*/
-        -o-transition-property: none !important;
-        -moz-transition-property: none !important;
-        -ms-transition-property: none !important;
-        -webkit-transition-property: none !important;
-        transition-property: none !important;
-        /*CSS transforms*/
-        -o-transform: none !important;
-        -moz-transform: none !important;
-        -ms-transform: none !important;
-        -webkit-transform: none !important;
-        transform: none !important;
-        /*CSS animations*/
-        -webkit-animation: none !important;
-        -moz-animation: none !important;
-        -o-animation: none !important;
-        -ms-animation: none !important;
-        animation: none !important;
-    }
+
+
+@media screen and (max-width: 768px) {
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+    opacity: 1 !important;
+  }
+
+  html:not(.no-js) [data-aos=fade-right] {
+    transform: none !important;
+  }
+  html:not(.no-js) [data-aos=fade-down] {
+    transform: none !important;
+  }
+  html:not(.no-js) [data-aos=fade-up] {
+    transform: none !important;
+  }
+
 }
+
 
 .main-container{
 
