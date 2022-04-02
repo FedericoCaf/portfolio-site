@@ -60,6 +60,28 @@ export default {
 }
 
 
+@media screen and (max-height: 500px) {
+  [data-aos] {
+    pointer-events: auto !important;
+  }
+
+  html:not(.no-js) [data-aos^=fade][data-aos^=fade] {
+    opacity: 1 !important;
+  }
+
+  html:not(.no-js) [data-aos=fade-right] {
+    transform: none !important;
+  }
+  html:not(.no-js) [data-aos=fade-down] {
+    transform: none !important;
+  }
+  html:not(.no-js) [data-aos=fade-up] {
+    transform: none !important;
+  }
+
+}
+
+
 .main-container{
 
   height: calc(100vh - 75px);
