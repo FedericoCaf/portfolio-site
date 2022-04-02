@@ -16,7 +16,7 @@
       
 
     <div class="box-img-title">
-       <h1 class="text-white">Ciao, sono <span class="text-secondary">Federico</span> </h1>
+       <h1 class="text-white">Ciao, sono <span class="text-secondary text-name">Federico</span> </h1>
        <h3 class="text-white mt-3">benvenuti nel mio portfolio</h3>
     </div>
 
@@ -35,6 +35,35 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
+.text-name
+{
+  //  text-transform: uppercase;
+    background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #260080 29%,
+    rgba(255, 94, 0, 0.995) 67%,
+    rgba(0, 255, 132, 0.945) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  // text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      // font-size: 90px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
 
 
 

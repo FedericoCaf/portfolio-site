@@ -55,6 +55,16 @@ export default {
           previews:[
 
               {
+                  img:   require("../assets/img/boolflix.png"),
+                  link: 'https://federico-boolflix.netlify.app/',
+                  title: 'Boolflix'    
+              },
+              {
+                  img:   require("../assets/img/avada.png"),
+                  link: 'https://avada-consultant-theme.netlify.app/', 
+                  title: 'Avada Consult'         
+              },
+              {
                   img:   require("../assets/img/playstation.png"),
                   link:  'https://federicocaf.github.io/htmlcss-playstation/',  
                   title: 'Playstation'        
@@ -68,12 +78,7 @@ export default {
                   img:   require("../assets/img/campoMinato.png"),
                   link: 'https://federicocaf.github.io/js-campominato-dom/',     
                   title: 'Minefield'       
-              },
-              {
-                  img:   require("../assets/img/boolflix.png"),
-                  link: 'https://github.com/FedericoCaf/vue-boolflix',
-                  title: 'Boolflix'    
-              },
+              },        
               {
                   img:   require("../assets/img/freelancers.png"),  
                   link: 'https://github.com/FedericoCaf/freelancersB',
@@ -90,14 +95,8 @@ export default {
                   title: 'Boolzapp'     
               },
               {
-                  img:   require("../assets/img/avada.png"),
-                  link: 'https://github.com/FedericoCaf/proj-html-vuejs', 
-                  title: 'Avada Consult'         
-              },
-            
-              {
                   img:   require("../assets/img/dischi-api.png"), 
-                  link: 'https://github.com/FedericoCaf/php-ajax-dischi',   
+                  link: 'https://federico-discs.netlify.app/',   
                   title: 'Discs'         
               },
              
@@ -107,9 +106,6 @@ export default {
                   title: 'Discord'          
               },
             
-                
-
-
            ]
              
               
