@@ -289,8 +289,10 @@ export default {
 
  .box-circles{
 
+   margin-top: -100px;
+
         .fc-circle{
-         
+
             a{
               font-size: 18px;
             }
@@ -318,6 +320,7 @@ export default {
 
 
        .box-img-title{
+         margin-top: -70px;
         h1{
           font-size: 35px;
         }
