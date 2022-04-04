@@ -1,15 +1,14 @@
 <template>
 
   <header id="1" class="d-flex justify-content-between">
-      <a href="#1"> 
-        <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
-         
-             
-                 <span class="logo-font"> fc </span> 
-           
-          
-         </div>
+    <div class="img-logo">
+
+      <a href="#1">     
+                 <!-- <span class="logo-font"> fc </span>  -->
+                 <img src="../assets/img/youblack.png" alt="">
         </a>
+
+    </div>
      <ul class="d-flex">
        <li> <a target="_blank" href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
        <li> <a target="_blank" href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
@@ -81,6 +80,14 @@ export default {
          &:hover{
            color: white;
          }
+     }
+
+     .img-logo{
+       width: 150px;
+       height: 150px;
+          img{
+            width: 100%;
+          }
      }
 
  }
