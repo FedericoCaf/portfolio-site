@@ -187,7 +187,7 @@ export default {
         transition: all 0.5s;
          &:hover{
                   box-shadow: 0 0 1px 5px rgba(rgba(0, 0, 0, 0.824), 0.4),
-                  0 0 1px 10px #002afff3,
+                  0 0 1px 10px #560eff,
                   0 0 1px 20px rgba(rgba(55, 0, 255, 0.856), 0.1);
               }
     }
