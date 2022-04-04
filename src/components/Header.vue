@@ -1,14 +1,13 @@
 <template>
 
   <header id="1" class="d-flex justify-content-between">
-    <div class="img-logo">
-
-      <a href="#1">     
-                 <!-- <span class="logo-font"> fc </span>  -->
-                 <img src="../assets/img/youblack.png" alt="">
+      <a href="#1"> 
+        <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+                
+                 <span class="logo-font"> fc </span> 
+          
+         </div>
         </a>
-
-    </div>
      <ul class="d-flex">
        <li> <a target="_blank" href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
        <li> <a target="_blank" href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
@@ -82,23 +81,6 @@ export default {
          }
      }
 
-     .img-logo{
-       width: 120px;
-       height: 120px;
-          img{
-            width: 100%;
-          }
-     }
-
- }
-
- @media (max-width: 500px){
-     header{
-       .img-logo{
-          width: 70px;
-          height: 70px;
-       }
-     }
  }
 
 </style>
