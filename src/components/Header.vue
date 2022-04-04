@@ -92,4 +92,13 @@ export default {
 
  }
 
+ @media (max-width: 500px){
+     header{
+       .img-logo{
+          width: 70px;
+          height: 70px;
+       }
+     }
+ }
+
 </style>
