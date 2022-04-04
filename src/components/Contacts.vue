@@ -27,7 +27,7 @@
       <h2 class="text-center"> Contattami </h2>
       <p class="text-center">Sono attualmente interessato a nuove oppurtunità lavorative. Non esitare a scrivermi per qualsiasi informazione</p>
       <div data-aos="fade-right" data-aos-duration="2000" v-if="isClicked"
-       class="alert alert-success text-center mt-5" role="alert">
+       class="alert alert-success text-center" role="alert">
          Messaggio inviato correttamente
       </div>
   </div>
