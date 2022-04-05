@@ -100,9 +100,9 @@ export default {
  @media (max-width: 500px){
     header{
       .logo-img{
-       width: 70px;
-       height: 70px;
-       padding: 5px;
+       width: 60px;
+       height: 60px;
+       margin-left: -15px;
          img{
            width: 100%;
          }
