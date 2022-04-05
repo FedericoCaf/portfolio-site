@@ -1,13 +1,17 @@
 <template>
 
   <header id="1" class="d-flex justify-content-between">
-      <a href="#1"> 
-        <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
+     <div class="logo-img">
+         <a href="#1"> 
+        <!-- <div class="fc-circle fc-one d-flex justify-content-center align-items-center">
                 
                  <span class="logo-font"> fc </span> 
           
-         </div>
+         </div> -->
+             <img src="../assets/img/logowhite.png" alt="logo">
         </a>
+     </div>
+    
      <ul class="d-flex">
        <li> <a target="_blank" href="https://www.linkedin.com/in/federico-cafiero-228ab3aa/"> <i class="fab fa-linkedin"></i>  </a> </li>
        <li> <a target="_blank" href="https://github.com/FedericoCaf"> <i class="fab fa-github-square"></i> </a> </li>
@@ -27,6 +31,7 @@ export default {
 <style scoped lang="scss">
 
 @import "../assets/style/generals.scss";
+
 
   .logo-font{
     font-family: 'Inspiration', cursive;
@@ -81,6 +86,28 @@ export default {
          }
      }
 
+     .logo-img{
+       width: 90px;
+       height: 90px;
+         img{
+           width: 100%;
+         }
+     }
+
+ }
+
+
+ @media (max-width: 500px){
+    header{
+      .logo-img{
+       width: 70px;
+       height: 70px;
+       padding: 5px;
+         img{
+           width: 100%;
+         }
+     }
+    }
  }
 
 </style>
